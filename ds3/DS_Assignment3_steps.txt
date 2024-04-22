@@ -1,0 +1,24 @@
+install Microsoft MPI executeable file from 
+https://www.microsoft.com/en-us/download/details.aspx?id=100593
+
+then add path of Microsoft MPI/bin in system environment variables
+
+to install python in linux-
+sudo apt install python3
+
+for windows- 
+
+open terminal-
+
+step 1: pip install mpi4py numpy
+step 2: mpiexec -np 4 python DistributedSum.py 
+or
+step 2: mpirun -np 4 python DistributedSum.py
+
+
+
+
+
+
+
+

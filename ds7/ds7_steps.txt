@@ -1,0 +1,10 @@
+STEPS:
+
+
+1) python app.py
+
+open new terminal-
+
+2) python disapp.py
+
+3) Open http://localhost:5000/hello for output.

@@ -1,0 +1,17 @@
+Put all these client files in a folder named Client
+
+Put all these server files in a folder named Server
+
+STEPS:
+
+1. Terminal 1
+
+javac Client/*.java
+javac Server/*.java
+rmiregistry 5000
+
+2. Terminal 2
+java Server.ServerMain
+
+3. Terminal 3
+java Client.ClientMain

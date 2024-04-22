@@ -1,0 +1,41 @@
+
+IDLJ Supports for older version of JDK such as jdk1.8.0_221
+In installed version of jdk check in bin folder "idlj.exe" file exists or not 
+if exists then add the path of bin folder into the system environment variables.
+else try with different version 
+
+open assignment folder in terminal and run following command
+
+1) idlj –fall Calc.idl
+
+2) for compilation - 
+
+javac CalcApp/*.java CalcApp/CalcPackage/*.java CalcClient.java CalcServer.java
+
+3) 
+
+For Windows
+start orbd –ORBInitialPort 1050 –ORBInitialHost localhost
+For Ubuntu
+orbd -ORBInitialPort 1050 -ORBInitialHost localhost &
+
+4)
+
+Start the server using the following command:<br>
+For Windows
+java CalcServer –ORBInitialPort 1050 –ORBInitialHost localhost
+For Ubuntu
+java -cp .:target/dependency/* CalcServer -ORBInitialPort 1050 -ORBInitialHost localhost
+
+5) use new terminal for client side
+
+For Windows
+java CalcClient –ORBInitialPort 1050 –ORBInitialHost localhost
+For Ubuntu
+java -cp .:target/dependency/* CalcClient -ORBInitialPort 1050 -ORBInitialHost localhost
+
+
+
+
+
+
